@@ -11,8 +11,8 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 import os
  
-os.environ["OPEN_AI_KEY"] = st.secrets["key"]["OPENAI_API_KEY"]
-OpenAI.api_key = st.secrets.key.OPENAI_API_KEY
+openai_api_key = st.secrets["key"]["OPENAI_API_KEY"]
+OpenAI.api_key = open_api_key
        
 
 def main():
