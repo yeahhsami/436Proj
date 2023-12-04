@@ -10,8 +10,10 @@ from langchain.llms import OpenAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 import os
- 
+
+
 openai_api_key = st.secrets["key"]["OPENAI_API_KEY"]
+os.environ["key"] = openai_api_key
 OpenAI.api_key = openai_api_key
        
 
