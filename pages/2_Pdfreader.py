@@ -12,7 +12,7 @@ from langchain.callbacks import get_openai_callback
 import os
  
 openai_api_key = st.secrets["key"]["OPENAI_API_KEY"]
-OpenAI.api_key = open_api_key
+OpenAI.api_key = openai_api_key
        
 
 def main():
