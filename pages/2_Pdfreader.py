@@ -13,7 +13,6 @@ import os
  
  
 load_dotenv()
-os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
 OpenAI.api_key = st.secrets['key']['OPENAI_API_KEY']
        
 
