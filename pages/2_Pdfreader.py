@@ -11,8 +11,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 import os
  
- 
-load_dotenv()
+
 OpenAI.api_key = st.secrets['key']['OPENAI_API_KEY']
        
 
